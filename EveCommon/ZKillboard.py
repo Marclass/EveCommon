@@ -155,3 +155,7 @@ class KillMail(object):
         for key, value in dictionary.items():
             if isinstance(value, dict):
                 self.__dict__[key] = KillMail(value)
+    def __str__(self):
+        return str(self.__dict__)
+    def __repr__(self):
+        return str(self.__dict__)
